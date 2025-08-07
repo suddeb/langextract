@@ -1,6 +1,5 @@
 import textwrap
 import langextract as lx
-import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -61,7 +60,6 @@ lx.io.save_annotated_documents([result], output_name=OUTPUT_JSONL_FILENAME)
 
 # Generate the interactive visualization from the file
 html_content = lx.visualize(OUTPUT_JSONL_PATH)
-raw_html = html_content._repr_html_()
 with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-    f.write(str(raw_html))
+    f.write(str(html_content))
 print(f"Visualization successfully saved to '{OUTPUT_PATH}'")
