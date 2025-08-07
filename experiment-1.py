@@ -2,7 +2,6 @@ import textwrap
 import langextract as lx
 import os
 from dotenv import load_dotenv
-from bs4 import BeautifulSoup
 
 # Load environment variables from .env file
 load_dotenv()
