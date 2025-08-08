@@ -11,13 +11,18 @@ LangExtract is a Python library that uses LLMs to extract structured information
 Here in this Github repo, I am storing all of my experiments to extract structured information from different unstructured sources.
 
 
-## Programs
+## Code
 
 - **experiment-1.py** - Python program using langextract to process simple unstructured text and provide structured information.
 - **experiment-2.py** - Python program using langextract to process medical prescription (unstructured text) and provide structured data.
 - **alice_in_wonderland.py** - Python program using langextract to process a short story from online (unstructured text) and provide userful information (structured data).
 - **romeo_juliet.py** - Python program using langextract to process a short story from online (unstructured text) and provide userful information (structured data).
 - **spiderman.py** - Python program using langextract to process a short story from online (unstructured text) and provide userful information (structured data).
+
+## Screenshots
+
+![Alice In Wonderland](https://github.com/suddeb/langextract/blob/main/screenshots/alice_in_wonderland.png)
+
 
 ## Authors
 
