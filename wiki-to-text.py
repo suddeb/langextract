@@ -27,6 +27,6 @@ def wikipedia_to_text(url, filename):
         print(f"An error occurred: {e}")
 
 # Example usage:
-wikipedia_url = "https://en.wikipedia.org/wiki/Tom_and_Jerry"
-output_filename = "data/tom_jerry.txt"
+wikipedia_url = "https://en.wikipedia.org/wiki/Spider-Man"
+output_filename = "data/spiderman.txt"
 wikipedia_to_text(wikipedia_url, output_filename)
