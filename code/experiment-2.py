@@ -3,6 +3,7 @@
 import textwrap
 import langextract as lx
 from dotenv import load_dotenv
+import os
 
 # Load environment variables from .env file
 load_dotenv()
@@ -50,14 +51,19 @@ result = lx.extract(
 
 # Define output paths
 OUTPUT_JSONL_FILENAME = "exp2_extraction_results.jsonl"
-OUTPUT_JSONL_PATH = "test_output/" + OUTPUT_JSONL_FILENAME
-OUTPUT_PATH = "test_output/exp2_visualization.html"
+OUTPUT_HTML_FILENAME = "exp2_visualization.html"
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Go up one level from 'code' to the project root, then into the 'data' directory
+OUTPUT_JSONL_PATH = os.path.join(script_dir, "..", "test_output", OUTPUT_JSONL_FILENAME)
+OUTPUT_HTML_PATH = os.path.join(script_dir, "..", "test_output", OUTPUT_HTML_FILENAME)
 
 # Save the results to a JSONL file
 lx.io.save_annotated_documents([result], output_name=OUTPUT_JSONL_FILENAME)
 
 # Generate the interactive visualization from the file
 html_content = lx.visualize(OUTPUT_JSONL_PATH)
-with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+with open(OUTPUT_HTML_PATH, "w", encoding="utf-8") as f:
     f.write(str(html_content))
-print(f"Visualization successfully saved to '{OUTPUT_PATH}'")
+print(f"Visualization successfully saved to '{OUTPUT_HTML_PATH}'")
