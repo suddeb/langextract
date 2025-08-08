@@ -21,7 +21,26 @@ Here in this Github repo, I am storing all of my experiments to extract structur
 
 ## Screenshots
 
+Experiment 1:
+![Experiment 1](https://github.com/suddeb/langextract/blob/main/screenshots/experiment-1.png)
+
+Experiment 2:
+![Experiment 2](https://github.com/suddeb/langextract/blob/main/screenshots/experiment-2.png)
+
+Alice In Wonderland:
 ![Alice In Wonderland](https://github.com/suddeb/langextract/blob/main/screenshots/alice_in_wonderland.png)
+
+Romeo Juliet:
+![Romeo Juliet](https://github.com/suddeb/langextract/blob/main/screenshots/romeo_juliet.png)
+
+Spiderman:
+![Spiderman](https://github.com/suddeb/langextract/blob/main/screenshots/spiderman.png)
+
+## Helper Program
+
+Below Python program is used to copy contents from Wiki Page and create txt file.
+
+**wiki-to-text.py**
 
 
 ## Authors
